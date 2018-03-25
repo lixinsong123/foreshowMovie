@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class="user-info">
+    <image class="avatar" src='{{avatarUrl}}'>
+    </image>
+    <text class="name">{{nickName}}</text>
+  </view>
+  <view class="history">
+    <text>观看历史</text>
+    <view class="jump"
+      bindtap = "jump"
+    >></view>
+  </view>
+  <view class="history"
+        bindtap = "clearStorge"
+  >
+    清空缓存
+  </view>
+</view>

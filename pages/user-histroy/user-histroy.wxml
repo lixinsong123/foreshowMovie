@@ -1,0 +1,27 @@
+ <view wx:key wx:for = "{{movies}}" wx:for-item = "movieData"  class="list-item">
+      <view
+        bindtap='gotoDetailHandler'
+        data-id = '{{item._id}}'
+       wx:key ="{{index}}" class="movie-item" wx:for = "{{movieData}}">
+        <image
+          class= "poster"
+          mode="widthFix"
+          src="{{item.poster}}"
+          lazy-load='true'
+        > 
+        </image>
+        <view class="title">
+          <text>
+              {{item.raw_title}}<text class="rate">{{item.rate}}</text>
+          </text>
+        </view>
+        <view class="info">
+          <text>
+            {{item.types}} / {{item.year}}
+          </text>
+        </view>
+      </view>
+  </view> 
+  <view class="loading" wx:if = "{{loading}}">
+    <image src="/assets/loading/loading-bars.svg"></image>
+  </view>

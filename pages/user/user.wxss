@@ -1,0 +1,35 @@
+page{
+  background-color :#eee;
+
+}
+.user-info{
+  padding: 40rpx 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 22rpx;
+}
+.avatar{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  border:1px solid #eee;
+}
+.history{
+  margin-top: 40rpx;
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+  font-size: 30rpx;
+  position: relative;
+}
+.jump{
+  float: right;
+  font-size: 50rpx;
+  padding: 30rpx;
+  position: absolute;
+  right: 0;
+  top: 2rpx;
+}

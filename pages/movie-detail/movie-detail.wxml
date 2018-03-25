@@ -1,0 +1,29 @@
+<view class="container">
+  <video 
+    src="{{movie.video}}"
+    poster='{{movie.poster}}'
+    controls
+    style='width:100%'
+    bindplay = "videoPlay"
+  >
+  </video>
+  <view class="movie-content">
+    <view class="title">
+      <text>{{movie.raw_title}}</text>
+    </view>
+    <view class="type">
+      <text>
+        {{movie.rate}}分 / {{movie.types}}
+      </text>
+    </view>
+    <view class="pubdate">
+      上映时间 ： {{movie.pubdate}} {{movie.country}}
+    </view>
+    <view class="summary">
+      {{movie.summary}}
+    </view>
+    <view class="tags">
+      <text wx:key = "{{index}}" wx:for = '{{movie.tags}}'>{{item}}</text>
+    </view>
+  </view>
+</view>
